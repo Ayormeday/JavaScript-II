@@ -61,14 +61,17 @@ const runners = [
 // This array will contain just strings.
 let fullNames = [];
 const firstAndLastNames = runners.forEach(person => {
-  console.log(fullNames.push(`${person.first_name} ${person.last_name}`));
-  
+  console.log(fullNames.push(`${person.first_name} ${person.last_name}`)); 
 });
 console.log(fullNames);
 
 // ==== Challenge 2: Use .map() ====
-// The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. Populate an array called `firstNamesAllCaps`. This array will contain just strings.
-let firstNamesAllCaps = [];
+// The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. 
+// Populate an array called `firstNamesAllCaps`. This array will contain just strings.
+// let firstNamesAllCaps = [];
+const firstNamesAllCaps = runners.map((person) => {
+  return person.first_name.toUpperCase();
+})
 console.log(firstNamesAllCaps);
 
 // ==== Challenge 3: Use .filter() ====
