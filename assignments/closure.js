@@ -5,6 +5,21 @@
 // The outer scope can be a parent function, or the top level of the script.
 
 
+let c = 5;
+
+function add(a, b){
+  if (a > b){
+    console.log(a + b);
+    return true;
+  } else {
+    console.log( c + a + b);
+  }
+}
+
+console.log(add());
+
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
