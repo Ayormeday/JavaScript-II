@@ -2,7 +2,8 @@
 // Write a closure of your own creation.
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
-// The outer scope can be a parent function, or the top level of the script.
+// The outer scope can be a parent function, or the top level of 
+// the script.
 
 
 let c = 5;
@@ -48,8 +49,16 @@ const counterMaker = () => {
 // will refuse to go over the limit, and start back at 1.
 
 // ==== Challenge 4: Create a counter function with an object that can increment and decrement ====
+
+let array = [22,3,4,5,3,4,5,3,2]
 const counterFactory = () => {
   // Return an object that has two methods called `increment` and `decrement`.
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
+  function increment (){
+    for (let i = 0; i < array.length; i++){
+      return [i];
+    };
+  };
+  console.log(counterFactory(array));
 };
